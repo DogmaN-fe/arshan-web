@@ -1,0 +1,16 @@
+.navigation{
+    align-self: center;
+    
+    margin-right: 10px;
+
+}
+
+.navigation_link:not(:last-child){
+    margin-right: 25px;
+
+    transition: color 0.2s ease;
+}
+
+.navigation_link:hover{
+    color: #c9cac2;
+}
