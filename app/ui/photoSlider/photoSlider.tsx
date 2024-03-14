@@ -4,17 +4,17 @@ import { ReactElement, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./photoSlider.module.css";
 
-import slide_1 from "@/public/Slider/DSC02705.jpg";
-import slide_2 from "@/public/Slider/DSC02716.jpg";
-import slide_3 from "@/public/Slider/DSC02756.jpg";
-import slide_4 from "@/public/Slider/DSC02786.jpg";
-import slide_5 from "@/public/Slider/DSC02864.jpg";
-import slide_6 from "@/public/Slider/DSC02879.jpg";
-import slide_7 from "@/public/Slider/DSC03179.jpg";
-import slide_8 from "@/public/Slider/DSC03182.jpg";
-import slide_9 from "@/public/Slider/DSC03197.jpg";
-import slide_10 from "@/public/Slider/DSC03199.jpg";
-import slide_11 from "@/public/Slider/DSC03209.jpg";
+import slide_1 from "@/public/photoSlider/DSC02705.jpg";
+import slide_2 from "@/public/photoSlider/DSC02716.jpg";
+import slide_3 from "@/public/photoSlider/DSC02756.jpg";
+import slide_4 from "@/public/photoSlider/DSC02786.jpg";
+import slide_5 from "@/public/photoSlider/DSC02864.jpg";
+import slide_6 from "@/public/photoSlider/DSC02879.jpg";
+import slide_7 from "@/public/photoSlider/DSC03179.jpg";
+import slide_8 from "@/public/photoSlider/DSC03182.jpg";
+import slide_9 from "@/public/photoSlider/DSC03197.jpg";
+import slide_10 from "@/public/photoSlider/DSC03199.jpg";
+import slide_11 from "@/public/photoSlider/DSC03209.jpg";
 
 export default function PhotoSlider(): ReactElement {
   const images = [
@@ -31,24 +31,26 @@ export default function PhotoSlider(): ReactElement {
     slide_11.src,
   ];
 
-  const [position, setPosition] = useState(45.45);
+  const [position, setPosition] = useState(45);
 
   const nextPhoto = () => {
     setPosition((prevPosition) => {
-      if (prevPosition === -45.45) {
-        return 45.45;
+      if (prevPosition === -45) {
+        return 45;
       } else {
-        return prevPosition - 9.09;
+        console.log(prevPosition);
+
+        return prevPosition - 10;
       }
     });
   };
 
   const prevPhoto = () => {
     setPosition((prevPosition) => {
-      if (prevPosition === 45.45) {
-        return -45.45;
+      if (prevPosition === 45) {
+        return -45;
       } else {
-        return prevPosition + 9.09;
+        return prevPosition + 10;
       }
     });
   };
@@ -85,9 +87,9 @@ export default function PhotoSlider(): ReactElement {
               key={image}
               className={styles.slider_photo}
               src={image}
-              alt={`image-${image}`}
-              width={960}
-              height={640}
+              alt={`фото-${image}`}
+              width={1180}
+              height={720}
             />
           );
         })}

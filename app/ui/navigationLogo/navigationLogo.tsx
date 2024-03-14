@@ -9,8 +9,8 @@ export default function NavigationLogo(): ReactElement {
     <Link className={styles.logo} href={"#"}>
       <Image
         src={logo}
-        width={120}
-        height={120}
+        width={80}
+        height={80}
         priority={true}
         alt={"Логотип"}
       />

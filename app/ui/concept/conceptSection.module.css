@@ -1,0 +1,40 @@
+.concept{
+    display: flex;
+
+    justify-content: center;
+
+    width: 870px;
+    min-height: 150px;
+
+    margin-bottom: 40px;
+    padding: 50px;
+
+    background-color: #cecece31;
+    box-shadow: 5px 5px 4px 2px #c7c7c7;
+}
+
+.concept_title{
+
+    width: 50%;
+    margin-right: 35px;
+
+    font-size: 30px;
+}
+
+.concept_title_text{
+    color: #000000;
+}
+
+.concept_description_and_button{
+    width: 50%;
+
+}
+
+.concept_description{
+    color: #000000;
+
+    font-size: 17px;
+    line-height:1.2;
+
+    margin-bottom: 20px;
+}
