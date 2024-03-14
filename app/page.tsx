@@ -6,10 +6,10 @@ import HouseSlider from "./ui/houseSlider/houseSlider";
 export default function Page() {
   return (
     <main className={styles.main}>
-      <p className={styles.section_photo}>фото</p>
+      <p className={styles.section_title}>фото</p>
       <PhotoSlider />
       <ConceptSection />
-      <p className={styles.section_photo}>Дома</p>
+      <p className={styles.section_title}>Дома</p>
       <HouseSlider />
     </main>
   );

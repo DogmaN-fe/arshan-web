@@ -31,26 +31,26 @@ export default function PhotoSlider(): ReactElement {
     slide_11.src,
   ];
 
-  const [position, setPosition] = useState(45);
+  const [position, setPosition] = useState(45.45);
 
   const nextPhoto = () => {
     setPosition((prevPosition) => {
-      if (prevPosition === -45) {
-        return 45;
+      if (prevPosition === -45.45) {
+        return 45.45;
       } else {
         console.log(prevPosition);
 
-        return prevPosition - 10;
+        return prevPosition - 9.09;
       }
     });
   };
 
   const prevPhoto = () => {
     setPosition((prevPosition) => {
-      if (prevPosition === 45) {
-        return -45;
+      if (prevPosition === 45.45) {
+        return -45.45;
       } else {
-        return prevPosition + 10;
+        return prevPosition + 9.09;
       }
     });
   };
@@ -88,8 +88,8 @@ export default function PhotoSlider(): ReactElement {
               className={styles.slider_photo}
               src={image}
               alt={`фото-${image}`}
-              width={1180}
-              height={720}
+              width={1200}
+              height={800}
             />
           );
         })}

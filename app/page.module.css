@@ -5,11 +5,12 @@
     align-items: center;
 }
 
-.section_photo{
+.section_title{
     color: #000000;
 
     font-size: 70px;
     font-weight: 700;
     text-transform: uppercase;
 
+    margin-bottom: 10px;
 }
