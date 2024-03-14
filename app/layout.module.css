@@ -3,7 +3,6 @@
 
   flex-direction: column;
 
-  padding-top: 40px;
   margin-bottom: 180px;
 
   width: 100%;
@@ -21,16 +20,25 @@
 
 .header_navigation {
   display: flex;
+  position: fixed;
 
-  min-width: 80%;
+  background-color: rgba(88, 88, 88, 0.753);
 
-  margin-bottom: 40px;
+  min-width: 100%;
 
-  justify-content:space-between;
+  justify-content: space-around;
 }
 
-.header_navigation_phone{
+.header_navigation_phone {
   align-self: center;
 
   font-size: 20px;
+  
+  transition: color 0.3s ease;
+}
+
+.header_navigation_phone:hover {
+  cursor: pointer;
+
+  color: #c9cac2;
 }

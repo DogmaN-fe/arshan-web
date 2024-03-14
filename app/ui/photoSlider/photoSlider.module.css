@@ -1,28 +1,41 @@
 .slider {
   position: relative;
 
-  width: 800px;
+  width: 960px;
+  height: 640px;
 
   display: flex;
   flex-direction: column;
 
   align-items: center;
+
+  overflow: hidden;
+}
+
+.slider_photos {
+  z-index: 0;
+
+  display: flex;
+
+  transition: transform 1s ease;
 }
 
 .slider_photo {
   width: auto;
   height: auto;
 
-  transition: all 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .slider_button {
   position: absolute;
 
-  width: 60px;
+  z-index: 1;
+
+  width: 10%;
   height: 100%;
-  
-  font-size: 21px;
+
+  font-size: 40px;
   color: #fdfff5;
 
   border: none;
@@ -35,10 +48,10 @@
   background-color: #00000086;
 }
 
-.slider_button_left{
-  right: 94.3%;
+.slider_button_left {
+  right: 90%;
 }
 
-.slider_button_right{
-  left: 94.3%;
+.slider_button_right {
+  left: 90%;
 }

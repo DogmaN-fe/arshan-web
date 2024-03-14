@@ -31,37 +31,67 @@ export default function PhotoSlider(): ReactElement {
     slide_11.src,
   ];
 
-  const [currentImage, setCurrentImage] = useState(0);
+  const [position, setPosition] = useState(45.45);
 
-  const nextSlide = () => {
-    setCurrentImage(currentImage >= images.length - 1 ? 0 : currentImage + 1);
+  const nextPhoto = () => {
+    setPosition((prevPosition) => {
+      if (prevPosition === -45.45) {
+        return 45.45;
+      } else {
+        return prevPosition - 9.09;
+      }
+    });
   };
 
-  const prevSlide = () => {
-    setCurrentImage(currentImage <= 0 ? images.length - 1 : currentImage - 1);
+  const prevPhoto = () => {
+    setPosition((prevPosition) => {
+      if (prevPosition === 45.45) {
+        return -45.45;
+      } else {
+        return prevPosition + 9.09;
+      }
+    });
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextPhoto();
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className={styles.slider}>
       <button
         className={`${styles.slider_button} ${styles.slider_button_left}`}
-        onClick={prevSlide}
+        onClick={prevPhoto}
       >
-        {"←"}
+        {"❰"}
       </button>
       <button
         className={`${styles.slider_button} ${styles.slider_button_right}`}
-        onClick={nextSlide}
+        onClick={nextPhoto}
       >
-        {"→"}
+        {"❱"}
       </button>
-      <Image
-        className={styles.slider_photo}
-        src={images[currentImage]}
-        alt={`image-${currentImage}`}
-        width={800}
-        height={600}
-      />
+      <div
+        className={styles.slider_photos}
+        style={{ transform: `translateX(${position}%)` }}
+      >
+        {images.map((image) => {
+          return (
+            <Image
+              key={image}
+              className={styles.slider_photo}
+              src={image}
+              alt={`image-${image}`}
+              width={960}
+              height={640}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 }

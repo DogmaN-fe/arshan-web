@@ -1,14 +1,17 @@
 .navigation{
     align-self: center;
     
-    margin-right: 10px;
+    margin-right: 20px;
 
+}
+
+.navigation_link{
+
+    transition: color 0.3s ease;
 }
 
 .navigation_link:not(:last-child){
     margin-right: 25px;
-
-    transition: color 0.2s ease;
 }
 
 .navigation_link:hover{
