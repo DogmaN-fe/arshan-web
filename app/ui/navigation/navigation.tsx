@@ -30,10 +30,15 @@ export default function Navigation(): ReactElement {
       >
         Номера
       </Link>
-      <Link className={styles.navigation_link} href="#">
+      <Link
+        className={styles.navigation_link}
+        href="#advantage"
+        onClick={handleClick}
+      >
         Преимущества
       </Link>
-      <Link className={styles.navigation_link} href="#">
+      <Link className={styles.navigation_link} href="#whattodo"
+        onClick={handleClick}>
         Чем знаняться
       </Link>
       <Link className={styles.navigation_link} href="#">
@@ -42,7 +47,11 @@ export default function Navigation(): ReactElement {
       <Link className={styles.navigation_link} href="#">
         Партнеры
       </Link>
-      <Link className={styles.navigation_link} href="#">
+      <Link
+        className={styles.navigation_link}
+        href="#contacs"
+        onClick={handleClick}
+      >
         Контакты
       </Link>
     </nav>

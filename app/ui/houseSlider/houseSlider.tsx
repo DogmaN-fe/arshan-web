@@ -6,9 +6,10 @@ import styles from "./houseSlider.module.css";
 import slide_1 from "@/public/houseSlider/DSC02786.jpg";
 import slide_2 from "@/public/houseSlider/DSC03182.jpg";
 import CardHouse from "../cardHouse/cardHouse";
+import { IHouseCard } from "@/app/lib/types";
 
 export default function HouseSlider(): ReactElement {
-  const houseCards = [
+  const houseCards: IHouseCard[] = [
     {
       photo: slide_1.src,
       title: "Барнхаус для двоих",

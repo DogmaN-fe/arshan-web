@@ -38,8 +38,6 @@ export default function PhotoSlider(): ReactElement {
       if (prevPosition === -45.45) {
         return 45.45;
       } else {
-        console.log(prevPosition);
-
         return prevPosition - 9.09;
       }
     });

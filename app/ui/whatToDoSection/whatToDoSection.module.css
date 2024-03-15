@@ -1,0 +1,48 @@
+.section_what_to_do {
+  max-width: 1200px;
+
+  margin-bottom: 100px;
+}
+
+.what_to_do_position {
+  display: flex;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+}
+
+.what_to_do_card {
+  position: relative;
+  max-width: 400px;
+  max-height: 250px;
+}
+
+.what_to_do_image {
+  width: 400px;
+  height: 250px;
+}
+
+.image_container {
+  position: relative;
+}
+
+.overlay_text {
+  display: none;
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000ab;
+  text-align: center;
+  padding: 40px;
+}
+
+.what_to_do_card:hover .overlay_text {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}

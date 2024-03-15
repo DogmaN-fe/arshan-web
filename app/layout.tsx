@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={roboto.className}>
-        <header className={styles.header}>
+        <header id="header" className={styles.header}>
           <div className={styles.header_navigation}>
             <NavigationLogo />
             <Navigation />

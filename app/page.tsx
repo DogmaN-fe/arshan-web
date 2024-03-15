@@ -1,16 +1,34 @@
 import PhotoSlider from "./ui/photoSlider/photoSlider";
 import styles from "./page.module.css";
-import ConceptSection from "./ui/concept/conceptSection";
+import ConceptSection from "./ui/conceptSection/conceptSection";
 import HouseSlider from "./ui/houseSlider/houseSlider";
+import AdvantagesSection from "./ui/advantagesSection/advantagesSection";
+import ContacsSection from "./ui/contacsSection/contacsSection";
+import WhatToDoSection from "./ui/whatToDoSection/whatToDoSection";
 
 export default function Page() {
   return (
     <main className={styles.main}>
-      <p className={styles.section_title}>фото глэмпинг</p>
       <PhotoSlider />
       <ConceptSection />
       <p className={styles.section_title}>Номера глэмпинга</p>
       <HouseSlider />
+      <AdvantagesSection />
+      <p className={styles.section_title}>Чем заняться</p>
+      <WhatToDoSection />
+
+      <section className={styles.section_video}>
+        <iframe
+          width="860"
+          height="515"
+          src="https://www.youtube.com/embed/ezz2w-Ztf1o?si=4_OgXjtOEp4ugkrn"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </section>
+
+      <ContacsSection />
     </main>
   );
 }

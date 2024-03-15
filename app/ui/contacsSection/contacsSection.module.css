@@ -1,0 +1,37 @@
+.contacs_section{
+    display: flex;
+
+    width: 100%;
+
+    padding: 50px 100px;
+
+    background-color: #000000;
+    justify-content: center;
+}
+
+.contacs{
+    margin-right: 100px;
+}
+
+.contacs_title{
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.position{
+    display: flex;
+
+    align-items: center;
+}
+
+.position:not(:last-child){
+    
+    margin-bottom: 10px;
+}
+
+.contacs_address, .contacs_mail, .contacs_phone{
+
+    padding-left: 15px;
+    font-size: 17px;
+}
