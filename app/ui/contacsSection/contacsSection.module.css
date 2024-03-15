@@ -35,3 +35,16 @@
     padding-left: 15px;
     font-size: 17px;
 }
+
+@media (max-width: 800px) {
+    .contacs_section{
+        flex-direction: column;
+
+        padding: 25px;
+    }
+
+    .contacs{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

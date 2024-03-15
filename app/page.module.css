@@ -16,5 +16,23 @@
 }
 
 .section_video{
+    display: flex;
+
+    justify-content: center;
     margin-bottom: 130px;
+
+    width: 860px;
+    height: 515px;
 }
+
+@media (max-width: 800px) {
+    .section_title{
+        font-size: 30px;
+    }
+
+    .section_video{
+
+        height: 215px;
+    }
+}
+

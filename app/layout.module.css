@@ -6,7 +6,6 @@
   margin-bottom: 100px;
 
   width: 100%;
-  height: 900px;
 
   align-items: center;
 
@@ -41,4 +40,10 @@
   cursor: pointer;
 
   color: #95968f;
+}
+
+@media (max-width: 1130px) {
+  .header_navigation_phone {
+    font-size: 15px;
+  }
 }

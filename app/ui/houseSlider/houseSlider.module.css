@@ -46,3 +46,31 @@
 .slider_button:hover {
   background-color: #85ce854d;
 }
+
+@media (max-width: 1230px) {
+  .slider {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .slider {
+    width: 900px;
+  }
+}
+
+@media (max-width: 950px) {
+  .slider {
+    width: 700px;
+  }
+}
+
+@media (max-width: 800px) {
+  .slider {
+    width: 100%;
+  }
+
+  .buttons{
+    display: none;
+  }
+}

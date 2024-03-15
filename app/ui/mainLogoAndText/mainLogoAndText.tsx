@@ -20,7 +20,7 @@ export default function MainLogoAndText(): ReactElement {
         Аршан Глэмпинг – отдых на лоне дикой природы при высоком уровне сервиса
       </h1>
 
-      <BookingButton className=""/>
+      <BookingButton className={styles.main_logo_button}/>
       </div>
     </section>
   );

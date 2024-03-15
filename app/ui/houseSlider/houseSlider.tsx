@@ -26,6 +26,9 @@ export default function HouseSlider(): ReactElement {
 
   const [position, setPosition] = useState(25);
 
+  const [touchStartX, setTouchStartX] = useState(25);
+  const [touchEndX, setTouchEndX] = useState(25);
+
   const nextHouse = () => {
     setPosition((prevPosition) => {
       if (prevPosition === -25) {
@@ -46,11 +49,32 @@ export default function HouseSlider(): ReactElement {
     });
   };
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    const diff = touchStartX - touchEndX;
+
+    if (diff > 50) {
+      nextHouse();
+    } else if (diff < -50) {
+      prevHouse();
+    }
+  };
+
   return (
     <section id="house" className={styles.slider}>
       <div
         className={styles.slider_house_cards}
         style={{ transform: `translateX(${position}%)` }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         {houseCards.map((houseCard) => {
           return (

@@ -1,19 +1,39 @@
-.navigation{
-    align-self: center;
-    
-    margin-right: 20px;
+.navigation {
+  align-self: center;
 
+  margin-right: 20px;
 }
 
-.navigation_link{
-
-    transition: color 0.3s ease;
+.navigation_menu {
+  display: none;
 }
 
-.navigation_link:not(:last-child){
-    margin-right: 25px;
+.navigation_link {
+  transition: color 0.3s ease;
 }
 
-.navigation_link:hover{
-    color: #95968f;
+.navigation_link:not(:last-child) {
+  margin-right: 25px;
+}
+
+.navigation_link:hover {
+  color: #95968f;
+}
+
+@media (max-width: 1230px) {
+  .navigation {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1130px) {
+  .navigation_link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    display: none;
+  }
 }

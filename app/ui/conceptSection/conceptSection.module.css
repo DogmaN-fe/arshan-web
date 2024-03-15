@@ -41,3 +41,45 @@
   border-color: #85ce8599;
   background-color: #85ce8599;
 }
+
+@media (max-width: 1230px) {
+  .concept {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .concept {
+    width: 900px;
+  }
+}
+
+@media (max-width: 800px) {
+  .concept {
+    width: 100%;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .concept_title {
+    width: 100%;
+
+    margin-right: 0;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+  }
+
+  .concept_description_and_button {
+    width: 100%;
+  }
+
+  .concept_description {
+    font-size: 15px;
+    line-height: 1.2;
+
+    margin-bottom: 5px;
+  }
+}
