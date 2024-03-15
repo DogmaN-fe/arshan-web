@@ -9,7 +9,7 @@ export default function ConceptSection(): ReactElement{
         </div>
         <div className={styles.concept_description_and_button}>
             <p className={styles.concept_description}>Глэмпинг премиум-класса в окружении бескрайний степей.  Прикоснись к дикой природе, проведи время в кругу семьи, а все заботы мы возьмем на себя.</p>
-            <BookingButton />
+            <BookingButton className={styles.concept_booking_button}/>
         </div>
     </section>);
 }
