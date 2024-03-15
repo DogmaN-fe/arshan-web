@@ -9,7 +9,7 @@ export default function Page() {
       <p className={styles.section_title}>фото глэмпинг</p>
       <PhotoSlider />
       <ConceptSection />
-      <p className={styles.section_title}>Дома</p>
+      <p className={styles.section_title}>Номера глэмпинга</p>
       <HouseSlider />
     </main>
   );

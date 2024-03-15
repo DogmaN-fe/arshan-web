@@ -46,7 +46,7 @@ export default function HouseSlider(): ReactElement {
   };
 
   return (
-    <section className={styles.slider}>
+    <section id="house" className={styles.slider}>
       <div
         className={styles.slider_house_cards}
         style={{ transform: `translateX(${position}%)` }}

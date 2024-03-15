@@ -3,7 +3,7 @@ import styles from "./conceptSection.module.css";
 import BookingButton from "../bookingButton/bookingButton";
 
 export default function ConceptSection(): ReactElement{
-    return (<section className={styles.concept}>
+    return (<section id="concept" className={styles.concept}>
         <div className={styles.concept_title}>
             <h2 className={styles.concept_title_text}>Место силы и семейного отдыха</h2>
         </div>
