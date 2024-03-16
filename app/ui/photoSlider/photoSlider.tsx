@@ -36,7 +36,7 @@ export default function PhotoSlider(): ReactElement {
 
   const nextPhoto = () => {
     setPosition((prevPosition) => {
-      if (prevPosition === -45.45) {
+      if (prevPosition >= -45.45) {
         return 45.45;
       } else {
         return prevPosition - 9.09;
@@ -46,7 +46,7 @@ export default function PhotoSlider(): ReactElement {
 
   const prevPhoto = () => {
     setPosition((prevPosition) => {
-      if (prevPosition === 45.45) {
+      if (prevPosition >= 45.45) {
         return -45.45;
       } else {
         return prevPosition + 9.09;
@@ -59,9 +59,9 @@ export default function PhotoSlider(): ReactElement {
 
   const handleSwipeMove = (deltaX: number) => {
     const sliderWidth = sliderRef.current?.offsetWidth || 0;
-    const maxPosition = -45.45;
+    const maxPosition = 45.45;
 
-    let newPosition = position + deltaX - 80;
+    let newPosition = position + deltaX - 200;
     if (newPosition > 45.45) {
       newPosition = 45.45;
     } else if (newPosition < maxPosition) {
@@ -78,13 +78,13 @@ export default function PhotoSlider(): ReactElement {
 
 
 
-  useEffect(() => {
+/*   useEffect(() => {
     const interval = setInterval(() => {
       nextPhoto();
     }, 6000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); */
 
   return (
     <section className={styles.slider} {...handlers}>
