@@ -59,7 +59,7 @@ export default function PhotoSlider(): ReactElement {
 
   const handleSwipeMove = (deltaX: number) => {
 
-    let newPosition = position + deltaX - 200;
+    let newPosition = position + deltaX;
     if (newPosition > 45.45) {
       newPosition = -45.45;
     } else if (newPosition < -45.45) {
