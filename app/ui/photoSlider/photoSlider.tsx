@@ -62,8 +62,8 @@ export default function PhotoSlider(): ReactElement {
     const maxPosition = 45.45;
 
     let newPosition = position + deltaX - 10;
-    if (newPosition > 0) {
-      newPosition = 0;
+    if (newPosition > 45.45) {
+      newPosition = 45.45;
     } else if (newPosition < maxPosition) {
       newPosition = maxPosition;
     }
