@@ -77,7 +77,6 @@ export default function PhotoSlider(): ReactElement {
         {"❱"}
       </button>
       <div
-        ref={sliderRef}
         className={styles.slider_photos}
         style={{ transform: `translateX(${position}%)` }}
       >
