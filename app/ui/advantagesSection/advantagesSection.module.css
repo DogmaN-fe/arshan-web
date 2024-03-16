@@ -85,7 +85,7 @@
 @media (max-width: 800px) {
   .advantages_section {
     width: 100%;
-    padding: 35px;
+    padding: 15px;
   }
 
   .advantage_icon{
@@ -94,14 +94,14 @@
     padding: 0;
   }
   .advantages_icons_and_description {
-    gap: 20px;
+    gap: 10px 0;
   }
   .advantage_circle{
     width: 26px;
     height: 26px;
     border: none;
     border-radius: 0;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .advantages_title{
