@@ -35,7 +35,7 @@ export default function ContacsSection(): ReactElement {
           </Link>
         </span>
       </div>
-      <div className="map">
+      <div className={styles.map}>
         <div style={{ position: "relative", overflow: "hidden" }}>
           <a
             href="https://yandex.ru/maps/org/arshan_glemping/210839481246/?utm_medium=mapframe&utm_source=maps"
