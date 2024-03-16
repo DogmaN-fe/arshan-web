@@ -61,7 +61,7 @@ export default function PhotoSlider(): ReactElement {
     const sliderWidth = sliderRef.current?.offsetWidth || 0;
     const maxPosition = 45.45;
 
-    let newPosition = position + deltaX - 130;
+    let newPosition = position + deltaX - 90;
     if (newPosition > 45.45) {
       newPosition = 45.45;
     } else if (newPosition < maxPosition) {
