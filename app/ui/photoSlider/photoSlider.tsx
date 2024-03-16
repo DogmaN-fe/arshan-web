@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactElement, useEffect, useState } from "react";
+import { ReactElement, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./photoSlider.module.css";
 import { useSwipeable } from "react-swipeable";
@@ -54,16 +54,28 @@ export default function PhotoSlider(): ReactElement {
     });
   };
 
-  const [startX, setStartX] = useState(45.45);
+  const [startX, setStartX] = useState(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
 
   const handleSwipeMove = (deltaX: number) => {
-    setPosition((prevPosition) => prevPosition + deltaX);
+    const sliderWidth = sliderRef.current?.offsetWidth || 0;
+    const maxPosition = -(images.length - 1) * sliderWidth;
+
+    let newPosition = position + deltaX;
+    if (newPosition > 0) {
+      newPosition = 0;
+    } else if (newPosition < maxPosition) {
+      newPosition = maxPosition;
+    }
+
+    setPosition(newPosition);
   };
 
   const handlers = useSwipeable({
     onSwiping: ({ deltaX }) => handleSwipeMove(deltaX),
     onSwiped: () => setStartX(position),
   });
+
 
 
   useEffect(() => {
@@ -89,6 +101,7 @@ export default function PhotoSlider(): ReactElement {
         {"❱"}
       </button>
       <div
+      ref={sliderRef}
         className={styles.slider_photos}
         style={{ transform: `translateX(${position}%)` }}
       >
