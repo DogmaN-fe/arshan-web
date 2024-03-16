@@ -47,9 +47,8 @@ export default function WhatToDoSection(): ReactElement {
       <div className={styles.what_to_do_position}>
         {ToDoCards.map((element, index) => {
           return (
-            <>
+            <div key={index}>
               <div
-                key={index}
                 className={styles.what_to_do_card}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
@@ -67,7 +66,7 @@ export default function WhatToDoSection(): ReactElement {
                   )}
                 </div>
               </div>
-              <div key={index} className={styles.what_to_do_card_mob}>
+              <div className={styles.what_to_do_card_mob}>
                 <div className={styles.image_container}>
                   <Image
                     className={styles.what_to_do_image}
@@ -79,7 +78,7 @@ export default function WhatToDoSection(): ReactElement {
                   {<p className={styles.overlay_text}>{element.description}</p>}
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

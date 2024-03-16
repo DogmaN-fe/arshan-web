@@ -36,6 +36,12 @@
   font-size: 17px;
 }
 
+@media (max-width: 1130px) {
+  .contacs{
+    margin-right: 15px
+  }
+}
+
 @media (max-width: 800px) {
   .contacs_section {
     flex-direction: column;

@@ -28,7 +28,10 @@
 
 @media (max-width: 1130px) {
   .navigation_link {
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .navigation_link:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
