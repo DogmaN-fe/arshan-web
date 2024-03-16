@@ -3,7 +3,6 @@
 import { ReactElement, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./photoSlider.module.css";
-import { useSwipeable } from "react-swipeable";
 
 import slide_1 from "@/public/photoSlider/DSC02705.jpg";
 import slide_2 from "@/public/photoSlider/DSC02716.jpg";
