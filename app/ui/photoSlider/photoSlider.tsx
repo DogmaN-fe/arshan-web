@@ -54,14 +54,14 @@ export default function PhotoSlider(): ReactElement {
     });
   };
 
-  const [startX, setStartX] = useState(0);
+  const [startX, setStartX] = useState(45.45);
   const sliderRef = useRef<HTMLDivElement>(null);
 
   const handleSwipeMove = (deltaX: number) => {
     const sliderWidth = sliderRef.current?.offsetWidth || 0;
-    const maxPosition = -(images.length - 1) * sliderWidth;
+    const maxPosition = 45.45;
 
-    let newPosition = position + deltaX;
+    let newPosition = position + deltaX - 10;
     if (newPosition > 0) {
       newPosition = 0;
     } else if (newPosition < maxPosition) {
