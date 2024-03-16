@@ -54,10 +54,17 @@ export default function PhotoSlider(): ReactElement {
     });
   };
 
+  const [startX, setStartX] = useState(45.45);
+
+  const handleSwipeMove = (deltaX: number) => {
+    setPosition((prevPosition) => prevPosition + deltaX);
+  };
+
   const handlers = useSwipeable({
-    onSwipedLeft: nextPhoto,
-    onSwipedRight: prevPhoto,
+    onSwiping: ({ deltaX }) => handleSwipeMove(deltaX),
+    onSwiped: () => setStartX(position),
   });
+
 
   useEffect(() => {
     const interval = setInterval(() => {

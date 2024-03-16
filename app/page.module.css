@@ -32,7 +32,9 @@
 
     .section_video{
 
-        height: 215px;
+        width: 400px;
+        height: 515px;
+        margin-bottom: 30px;
     }
 }
 

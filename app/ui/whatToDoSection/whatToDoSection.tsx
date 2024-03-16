@@ -41,6 +41,7 @@ export default function WhatToDoSection(): ReactElement {
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  
 
   return (
     <section id="whattodo" className={styles.section_what_to_do}>
@@ -51,7 +52,7 @@ export default function WhatToDoSection(): ReactElement {
               key={index}
               className={styles.what_to_do_card}
               onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              onMouseLeave={() =>setHoveredIndex(null)}
             >
               <div className={styles.image_container}>
                 <Image
