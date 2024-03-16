@@ -3,6 +3,7 @@
 import { ReactElement, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./photoSlider.module.css";
+import { useSwipeable } from "react-swipeable";
 
 import slide_1 from "@/public/photoSlider/DSC02705.jpg";
 import slide_2 from "@/public/photoSlider/DSC02716.jpg";
@@ -53,6 +54,11 @@ export default function PhotoSlider(): ReactElement {
     });
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: nextPhoto,
+    onSwipedRight: prevPhoto,
+  });
+
   useEffect(() => {
     const interval = setInterval(() => {
       nextPhoto();
@@ -62,7 +68,7 @@ export default function PhotoSlider(): ReactElement {
   }, []);
 
   return (
-    <section className={styles.slider}>
+    <section className={styles.slider} {...handlers}>
       <button
         className={`${styles.slider_button} ${styles.slider_button_left}`}
         onClick={prevPhoto}

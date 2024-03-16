@@ -85,12 +85,16 @@
 
 @media (max-width: 900px) {
   .slider {
-    width: 400px;
+    width: 100%;
     height: 200px;
   }
 
   .slider_photo {
     width: 400px;
     height: 200px;
+  }
+
+  .slider_button {
+    display: none;
   }
 }
