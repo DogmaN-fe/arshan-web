@@ -35,7 +35,7 @@ export default function PhotoSlider(): ReactElement {
 
   const nextPhoto = () => {
     setPosition((prevPosition) => {
-      if (prevPosition >= -45.45) {
+      if (prevPosition === -45.45) {
         return 45.45;
       } else {
         return prevPosition - 9.09;
@@ -45,7 +45,7 @@ export default function PhotoSlider(): ReactElement {
 
   const prevPhoto = () => {
     setPosition((prevPosition) => {
-      if (prevPosition >= 45.45) {
+      if (prevPosition === 45.45) {
         return -45.45;
       } else {
         return prevPosition + 9.09;

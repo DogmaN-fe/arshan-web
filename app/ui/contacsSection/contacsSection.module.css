@@ -1,50 +1,52 @@
-.contacs_section{
-    display: flex;
+.contacs_section {
+  display: flex;
 
-    width: 100%;
+  width: 100%;
 
-    padding: 50px 100px;
+  padding: 50px 100px;
 
-    background-color: #000000;
-    justify-content: center;
+  background-color: #000000;
+  justify-content: center;
 }
 
-.contacs{
-    margin-right: 100px;
+.contacs {
+  margin-right: 100px;
 }
 
-.contacs_title{
-    font-size: 50px;
+.contacs_title {
+  font-size: 50px;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.position{
-    display: flex;
+.position {
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 }
 
-.position:not(:last-child){
-    
-    margin-bottom: 10px;
+.position:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.contacs_address, .contacs_mail, .contacs_phone{
-
-    padding-left: 15px;
-    font-size: 17px;
+.contacs_address,
+.contacs_mail,
+.contacs_phone {
+  padding-left: 15px;
+  font-size: 17px;
 }
 
 @media (max-width: 800px) {
-    .contacs_section{
-        flex-direction: column;
+  .contacs_section {
+    flex-direction: column;
 
-        padding: 25px;
-    }
+    align-items: center;
 
-    .contacs{
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
+    padding: 25px;
+  }
+
+  .contacs {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
