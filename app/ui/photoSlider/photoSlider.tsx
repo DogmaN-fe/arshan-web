@@ -54,38 +54,16 @@ export default function PhotoSlider(): ReactElement {
     });
   };
 
-  const [startX, setStartX] = useState(45.45);
-  const sliderRef = useRef<HTMLDivElement>(null);
-
-  const handleSwipeMove = (deltaX: number) => {
-
-    let newPosition = position + deltaX;
-    if (newPosition > 45.45) {
-      newPosition = -45.45;
-    } else if (newPosition < -45.45) {
-      newPosition = 45.45;
-    }
-
-    setPosition(newPosition);
-  };
-
-  const handlers = useSwipeable({
-    onSwiping: ({ deltaX }) => handleSwipeMove(deltaX),
-    onSwiped: () => setStartX(position),
-  });
-
-
-
-/*   useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       nextPhoto();
     }, 6000);
 
     return () => clearInterval(interval);
-  }, []); */
+  }, []);
 
   return (
-    <section className={styles.slider} {...handlers}>
+    <section className={styles.slider}>
       <button
         className={`${styles.slider_button} ${styles.slider_button_left}`}
         onClick={prevPhoto}
@@ -99,7 +77,7 @@ export default function PhotoSlider(): ReactElement {
         {"❱"}
       </button>
       <div
-      ref={sliderRef}
+        ref={sliderRef}
         className={styles.slider_photos}
         style={{ transform: `translateX(${position}%)` }}
       >
