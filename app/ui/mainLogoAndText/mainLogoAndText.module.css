@@ -45,3 +45,10 @@
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 800px) {
+  .main_logo_section{
+
+  padding-top: 10px;
+  }
+}
