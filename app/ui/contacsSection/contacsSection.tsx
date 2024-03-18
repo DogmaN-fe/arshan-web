@@ -36,7 +36,7 @@ export default function ContacsSection(): ReactElement {
         </span>
       </div>
       <div className={styles.map}>
-        <div style={{ position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "relative", overflow: "hidden" , width:"100%", height: "100%"}}>
           <a
             href="https://yandex.ru/maps/org/arshan_glemping/210839481246/?utm_medium=mapframe&utm_source=maps"
             style={{
@@ -61,10 +61,9 @@ export default function ContacsSection(): ReactElement {
           </a>
           <iframe
             src="https://yandex.ru/map-widget/v1/?ll=44.239754%2C46.269158&mode=search&oid=210839481246&ol=biz&sctx=ZAAAAAgCEAAaKAoSCcECmDJwIkZAEWDq501FIkdAEhIJDTKvHCGisD8RIq629DL%2Fpj8iBgABAgMEBSgKOABA0LIHSAFqAnJ1nQHNzEw9oAEAqAEAvQG%2BsaguwgEMnteMuJEG0JHr7qIFggIb0LDRgNGI0LDQvSDQs9C70Y3QvNC%2F0LjQvdCzigIMMTEyOTU2OTc4MjA4kgIGMjE2MDg5mgIMZGVza3RvcC1tYXBz&sll=44.239754%2C46.269158&source=serp_navig&sspn=0.090858%2C0.048525&text=%D0%B0%D1%80%D1%88%D0%B0%D0%BD%20%D0%B3%D0%BB%D1%8D%D0%BC%D0%BF%D0%B8%D0%BD%D0%B3&z=13.98"
-            width="560"
-            height="400"
+            
             allowFullScreen={true}
-            style={{ position: "relative" }}
+            style={{ position: "relative",  width: "100%", height: "100%"}}
           ></iframe>
         </div>
       </div>

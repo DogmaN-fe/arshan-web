@@ -34,7 +34,9 @@ export default function RootLayout({
           <MainLogoAndText />
         </header>
         {children}
-        <footer></footer>
+        <footer>
+          
+        </footer>
       </body>
     </html>
   );

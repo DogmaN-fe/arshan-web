@@ -1,12 +1,10 @@
 .navigation {
+  display: flex;
   align-self: center;
 
   margin-right: 20px;
 }
 
-.navigation_menu {
-  display: none;
-}
 
 .navigation_link {
   transition: color 0.3s ease;
@@ -27,8 +25,12 @@
 }
 
 @media (max-width: 1130px) {
+  .navigation {
+    margin-right: 5px;
+  }
+
   .navigation_link {
-    font-size: 14px;
+    font-size: 15px;
   }
   .navigation_link:not(:last-child) {
     margin-right: 10px;

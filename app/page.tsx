@@ -20,8 +20,8 @@ export default function Page() {
       <section className={styles.section_video}>
         <iframe
           src="https://www.youtube.com/embed/ezz2w-Ztf1o?si=4_OgXjtOEp4ugkrn"
-          width={860}
-          height={515}
+          width={'100%'}
+          height={'100%'}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen

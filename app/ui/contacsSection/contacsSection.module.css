@@ -36,7 +36,16 @@
   font-size: 17px;
 }
 
-@media (max-width: 1130px) {
+.map{
+  width: 560px;
+  height: 400px;
+}
+
+
+@media (max-width: 1230px) {
+  .contacs_section {
+    padding: 50px 20px;
+  }
   .contacs{
     margin-right: 15px
   }
@@ -57,6 +66,8 @@
   }
 
   .map{
-    width:90%;
+    width: 100%;
   }
+
+  
 }

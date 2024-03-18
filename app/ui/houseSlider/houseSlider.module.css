@@ -16,6 +16,7 @@
 .slider_house_cards {
   display: flex;
 
+
   transition: transform 1s ease;
 }
 
@@ -55,15 +56,10 @@
 
 @media (max-width: 1130px) {
   .slider {
-    width: 900px;
+    width: 95%;
   }
 }
 
-@media (max-width: 950px) {
-  .slider {
-    width: 700px;
-  }
-}
 
 @media (max-width: 800px) {
   .slider {

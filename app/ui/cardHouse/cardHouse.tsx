@@ -27,8 +27,7 @@ export default function CardHouse({
           <Image
             src={photo}
             alt={`фото дома - ${photo}`}
-            width={660}
-            height={460}
+            fill={true}
           />
         </div>
       </div>

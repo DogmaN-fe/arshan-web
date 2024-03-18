@@ -81,14 +81,13 @@ export default function PhotoSlider(): ReactElement {
       >
         {images.map((image) => {
           return (
-            <Image
-              key={image}
-              className={styles.slider_photo}
-              src={image}
-              alt={`фото-${image}`}
-              width={1200}
-              height={800}
-            />
+            <div key={image} className={styles.slider_photo}>
+              <Image
+                src={image}
+                alt={`фото-${image}`}
+                fill={true}
+              />
+            </div>
           );
         })}
       </div>

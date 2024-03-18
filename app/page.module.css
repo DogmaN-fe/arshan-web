@@ -21,13 +21,14 @@
   justify-content: center;
   margin-bottom: 130px;
 
-  width: 860px;
-  height: 515px;
+  width: 1200px;
+  height: 600px;
 }
 
 @media (max-width: 1130px) {
   .section_video {
-    width: 90%;
+    width: 95%;
+    height: 400px;
   }
 }
 
@@ -38,6 +39,7 @@
 
   .section_video {
     width: 80%;
+    height: 300px;
     margin-bottom: 30px;
   }
 }

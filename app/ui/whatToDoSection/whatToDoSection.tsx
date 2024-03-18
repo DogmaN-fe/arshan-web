@@ -47,37 +47,21 @@ export default function WhatToDoSection(): ReactElement {
       <div className={styles.what_to_do_position}>
         {ToDoCards.map((element, index) => {
           return (
-            <div key={index}>
-              <div
-                className={styles.what_to_do_card}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <div className={styles.image_container}>
-                  <Image
-                    className={styles.what_to_do_image}
-                    src={element.image}
-                    alt="картинка чем заняться"
-                    width={400}
-                    height={250}
-                  />
-                  {hoveredIndex === index && (
-                    <p className={styles.overlay_text}>{element.description}</p>
-                  )}
-                </div>
-              </div>
-              <div className={styles.what_to_do_card_mob}>
-                <div className={styles.image_container}>
-                  <Image
-                    className={styles.what_to_do_image}
-                    src={element.image}
-                    alt="картинка чем заняться"
-                    width={400}
-                    height={250}
-                  />
-                  {<p className={styles.overlay_text}>{element.description}</p>}
-                </div>
-              </div>
+            <div
+              key={index}
+              className={styles.what_to_do_card}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <Image
+                className={styles.what_to_do_image}
+                src={element.image}
+                alt="картинка чем заняться"
+                fill={true}
+              />
+              {
+                <p className={styles.overlay_text}>{element.description}</p>
+              }
             </div>
           );
         })}

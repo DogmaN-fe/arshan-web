@@ -44,13 +44,7 @@
 
 @media (max-width: 1230px) {
   .concept {
-    width: 1000px;
-  }
-}
-
-@media (max-width: 1130px) {
-  .concept {
-    width: 900px;
+    width: 95%;
   }
 }
 
@@ -69,7 +63,7 @@
 
     font-size: 20px;
 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .concept_description_and_button {
@@ -85,6 +79,6 @@
     font-size: 20px;
     line-height: 1.2;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
