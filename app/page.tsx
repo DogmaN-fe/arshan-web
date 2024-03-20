@@ -14,7 +14,7 @@ export default function Page() {
       <p className={styles.section_title}>Номера глэмпинга</p>
       <HouseSlider />
       <AdvantagesSection />
-      <p className={styles.section_title}>Чем заняться</p>
+      <p className={styles.section_title}>Чем заняться?</p>
       <WhatToDoSection />
 
       <section className={styles.section_video}>
