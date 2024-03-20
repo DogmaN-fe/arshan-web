@@ -1,6 +1,6 @@
 .section_what_to_do {
   width: 1200px;
-  min-height: 500px;
+  height: 500px;
 
   margin-bottom: 100px;
 }
@@ -51,10 +51,12 @@
 @media (max-width: 1230px) {
   .section_what_to_do {
     width: 95%;
+    height: 900px;
   }
 
   .what_to_do_card {
     width: 50%;
+    height: 35%;
   }
 }
 

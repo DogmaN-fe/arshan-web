@@ -25,10 +25,9 @@
   height: 600px;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1230px) {
   .section_video {
     width: 95%;
-    height: 400px;
   }
 }
 
