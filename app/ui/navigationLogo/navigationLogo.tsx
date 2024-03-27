@@ -6,7 +6,7 @@ import { ReactElement } from "react";
 
 export default function NavigationLogo(): ReactElement {
   return (
-    <Link className={styles.logo} href={"#header"}>
+    <Link className={styles.logo} href={"/"}>
       <Image
         src={logo}
         width={80}
