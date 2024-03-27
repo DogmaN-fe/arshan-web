@@ -3,8 +3,8 @@
 import { ReactElement, useEffect, useState } from "react";
 import styles from "./houseSlider.module.css";
 
-import slide_1 from "@/public/houseSlider/DSC02786.jpg";
-import slide_2 from "@/public/houseSlider/DSC03182.jpg";
+import slide_1 from "@/public/houseSlider/DSC02786.png";
+import slide_2 from "@/public/houseSlider/DSC03182.png";
 import CardHouse from "../cardHouse/cardHouse";
 import { IHouseCard } from "@/app/lib/types";
 
@@ -15,12 +15,14 @@ export default function HouseSlider(): ReactElement {
       title: "Барнхаус для двоих",
       description:
         "Стильные видовые дома с панорамными окнами и верандами. Оснащены всем необходимым для комфортного проживания: кухня, ванная комната, спальня-гостиная с кроватью king-size, с телевизором и кондиционером.  Идеально подходит для пар, желающих провести время вместе, наслаждаясь природой и друг другом.",
+      roomType: "433998",
     },
     {
       photo: slide_2.src,
       title: "А-фрейм",
       description:
         "Двухэтажные видовые дома вместимостью до 6 человек с панорамными окнами и просторными верандами. Оснащены всем необходимым для комфортного проживания: кухня, ванная комната, гостиная, спальня на мансардном этаже с кроватью king-size и потрясающим видом, спальня с 2 кроватями.  Идеально подходит для семейного отдыха или дружеских посиделок.",
+      roomType: "433998",
     },
   ];
 
@@ -83,6 +85,7 @@ export default function HouseSlider(): ReactElement {
               photo={houseCard.photo}
               title={houseCard.title}
               description={houseCard.description}
+              roomType={houseCard.roomType}
             />
           );
         })}

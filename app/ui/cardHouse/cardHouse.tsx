@@ -7,10 +7,12 @@ export default function CardHouse({
   photo,
   title,
   description,
+  roomType,
 }: {
   photo: string;
   title: string;
   description: string;
+  roomType: string;
 }): ReactElement {
   return (
     <article
@@ -21,7 +23,7 @@ export default function CardHouse({
         <div className={styles.card_info}>
           <h3 className={styles.card_info_title}>{title}</h3>
           <p className={styles.card_info_description}>{description}</p>
-          <PriceButton />
+          <PriceButton roomType={roomType} />
         </div>
         <div className={styles.card_photo}>
           <Image

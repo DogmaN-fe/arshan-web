@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import ConceptSection from "./ui/conceptSection/conceptSection";
 import HouseSlider from "./ui/houseSlider/houseSlider";
 import AdvantagesSection from "./ui/advantagesSection/advantagesSection";
-import ContacsSection from "./ui/contacsSection/contacsSection";
 import WhatToDoSection from "./ui/whatToDoSection/whatToDoSection";
 
 export default function Page() {

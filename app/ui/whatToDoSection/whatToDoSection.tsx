@@ -5,12 +5,12 @@ import { ReactElement, useState } from "react";
 import Image from "next/image";
 import styles from "./whatToDoSection.module.css";
 
-import image_1 from "@/public/whatToDo/2023-10-22 21.02.51.jpg";
-import image_2 from "@/public/whatToDo/DSC03262.jpg";
-import image_3 from "@/public/whatToDo/dc25783a-e717-4a72-86e2-2772ce5480a9.jpg";
-import image_4 from "@/public/whatToDo/eba88878-db4b-441e-be57-46b5e7e7bb47.jpg";
-import image_5 from "@/public/whatToDo/f3f37c8b-7850-48e9-b4db-73b2642f3c71.jpg";
-import image_6 from "@/public/whatToDo/DSCF5880.jpg";
+import image_1 from "@/public/whatToDo/2023-10-22 21.02.51.png";
+import image_2 from "@/public/whatToDo/DSC03262.png";
+import image_3 from "@/public/whatToDo/dc25783a-e717-4a72-86e2-2772ce5480a9.png";
+import image_4 from "@/public/whatToDo/eba88878-db4b-441e-be57-46b5e7e7bb47.png";
+import image_5 from "@/public/whatToDo/f3f37c8b-7850-48e9-b4db-73b2642f3c71.png";
+import image_6 from "@/public/whatToDo/DSCF5880.png";
 
 export default function WhatToDoSection(): ReactElement {
   const ToDoCards: IToDoCard[] = [

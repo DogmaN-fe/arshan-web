@@ -2,6 +2,7 @@ export interface IHouseCard {
   photo: string;
   title: string;
   description: string;
+  roomType: string;
 }
 
 export interface IAdvantageCard {
