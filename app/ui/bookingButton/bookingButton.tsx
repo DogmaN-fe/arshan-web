@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import styles from "./bookingButton.module.css";
+import Link from "next/link";
 
 export default function BookingButton({
   className = "",
@@ -7,8 +8,10 @@ export default function BookingButton({
   className: string;
 }): ReactElement {
   return (
-    <button className={`${styles.booking_button}  ${className}`}>
-      забронировать
-    </button>
+    <Link href="/reservations">
+      <button className={`${styles.booking_button}  ${className}`}>
+        забронировать
+      </button>
+    </Link>
   );
 }
