@@ -56,7 +56,7 @@ export default function PhotoSlider(): ReactElement {
   useEffect(() => {
     const interval = setInterval(() => {
       nextPhoto();
-    }, 6000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
@@ -82,11 +82,7 @@ export default function PhotoSlider(): ReactElement {
         {images.map((image) => {
           return (
             <div key={image} className={styles.slider_photo}>
-              <Image
-                src={image}
-                alt={`фото-${image}`}
-                fill={true}
-              />
+              <Image src={image} alt={`фото-${image}`} fill={true} priority />
             </div>
           );
         })}

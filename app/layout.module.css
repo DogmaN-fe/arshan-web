@@ -23,7 +23,9 @@
 
   background-color: rgba(0, 0, 0, 0.541);
 
-  min-width: 100%;
+  width: 100%;
+
+  padding: 10px 0;
 
   justify-content: space-around;
 }
@@ -42,17 +44,52 @@
   color: #95968f;
 }
 
+.footer {
+  padding: 50px 100px;
+
+  background-color: #000000;
+}
+
+.footer_partners {
+  margin-bottom: 30px;
+}
+
+.footer_partners_title {
+  font-size: 17px;
+}
+
+.footer_partners_partner {
+  font-size: 15px;
+}
+
+.footer_partners_partner:hover {
+  color: #95968f;
+}
+
+.footer_copyright_and_yaer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_copyright,
+.footer_year {
+  font-size: 15px;
+}
+
 @media (max-width: 1130px) {
   .header_navigation_phone {
     font-size: 15px;
-    
   }
 }
 
 @media (max-width: 800px) {
   .header_navigation {
-    padding: 0 15px;
+    padding: 5px 15px;
     justify-content: space-between;
     position: relative;
+  }
+
+  .footer {
+    padding: 25px 10px;
   }
 }

@@ -6,6 +6,7 @@ import { roboto } from "./lib/fonts";
 import styles from "@/app/layout.module.css";
 import MainLogoAndText from "./ui/mainLogoAndText/mainLogoAndText";
 import Link from "next/link";
+import ContacsSection from "./ui/contacsSection/contacsSection";
 
 export const metadata: Metadata = {
   title: "Аршан Глэмпинг | наедине с природой",
@@ -34,8 +35,18 @@ export default function RootLayout({
           <MainLogoAndText />
         </header>
         {children}
-        <footer>
-          
+        <footer className={styles.footer}>
+          <ContacsSection />
+          <div id="partners" className={styles.footer_partners}>
+            <p className={styles.footer_partners_title}>Наши партнеры:</p>
+            <a href="https://hotonglamping.ru" className={styles.footer_partners_partner}>
+              Хотон-глемпинг
+            </a>
+          </div>
+          <div className={styles.footer_copyright_and_yaer}>
+            <p className={styles.footer_copyright}>© Аршан-глэмпинг</p>
+            <p className={styles.footer_year}>2024, Официальный сайт</p>
+          </div>
         </footer>
       </body>
     </html>

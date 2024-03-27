@@ -61,9 +61,19 @@
 }
 
 @media (max-width: 800px) {
+
+  .section_what_to_do {
+    width: 95%;
+    height: 675px;
+  }
+
+  .what_to_do_card {
+    width: 50%;
+    height: 34%;
+  }
   .overlay_text {
     display: flex;
-  
+
     justify-content: center;
     align-items: center;
   }

@@ -7,7 +7,14 @@ import styles from "@/app/ui/navigation/navigation.module.css";
 export default function Navigation(): ReactElement {
   const handleClick = (e: any) => {
     e.preventDefault();
-    const targetId = e.target.getAttribute("href").substring(1);
+    const targetId = e.target.getAttribute("href").substring(2);
+
+    console.log(window.location.href);
+
+    if (window.location.href.includes("/reservations")) {
+      window.location.href = `/#${targetId}`;
+    }
+
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -18,38 +25,41 @@ export default function Navigation(): ReactElement {
     <nav className={styles.navigation}>
       <Link
         className={styles.navigation_link}
-        href="#concept"
+        href="/#concept"
         onClick={handleClick}
       >
         Концепция
       </Link>
       <Link
         className={styles.navigation_link}
-        href="#house"
+        href="/#house"
         onClick={handleClick}
       >
         Номера
       </Link>
       <Link
         className={styles.navigation_link}
-        href="#advantage"
+        href="/#advantage"
         onClick={handleClick}
       >
         Преимущества
       </Link>
-      <Link className={styles.navigation_link} href="#whattodo"
-        onClick={handleClick}>
+      <Link
+        className={styles.navigation_link}
+        href="/#whattodo"
+        onClick={handleClick}
+      >
         Чем знаняться
       </Link>
-      <Link className={styles.navigation_link} href="#">
+      <Link className={styles.navigation_link} href="/reservations">
         Акции
       </Link>
-      <Link className={styles.navigation_link} href="#">
+      <Link className={styles.navigation_link} href="/#partners">
         Партнеры
       </Link>
       <Link
         className={styles.navigation_link}
-        href="#contacs"
+        href="/#contacs"
         onClick={handleClick}
       >
         Контакты
