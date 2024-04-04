@@ -4,12 +4,24 @@
 
   align-items: center;
 
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
-.main_reservations{
+.main_reservations {
   width: 100%;
-  min-height: 900px;
+  min-height: 1100px;
 
   border: none;
+}
+
+@media (max-width: 994px) {
+  .main_reservations {
+    min-height: 1700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main_reservations {
+    min-height: 1750px;
+  }
 }

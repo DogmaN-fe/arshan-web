@@ -8,7 +8,7 @@ export default function Page(): ReactElement {
 
   return (
     <main className={styles.main}>
-      <iframe className={styles.main_reservations} src={address}></iframe>
+      <iframe className={styles.main_reservations} src={address} ></iframe>
     </main>
   );
 }
