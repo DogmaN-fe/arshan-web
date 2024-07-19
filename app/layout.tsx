@@ -27,9 +27,9 @@ export default function RootLayout({
             <Navigation />
             <Link
               className={styles.header_navigation_phone}
-              href={"tel:+79629648888"}
+              href={"tel:+79150480808"}
             >
-              +7 (962) 964-88-88
+              +7 (915) 048-08-08
             </Link>
           </div>
           <MainLogoAndText />
