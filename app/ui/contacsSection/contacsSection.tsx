@@ -30,8 +30,8 @@ export default function ContacsSection(): ReactElement {
         </span>
         <span className={styles.position}>
           <Image src={phone} alt="иконка локатора" width={16} height={16} />
-          <Link className={styles.contacs_phone} href={"tel:+79629648888"}>
-            +7 (962) 964-88-88
+          <Link className={styles.contacs_phone} href={"tel:+79150480808"}>
+            +7 (915) 048-08-08
           </Link>
         </span>
       </div>
